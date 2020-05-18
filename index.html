@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Gothic+A1:400,500,600|Source+Code+Pro:500,600&display=swap">
+	
+	<head>
+
+		<title>Random Text</title>
+
+		<script src="p5.min.js" type="text/javascript"></script>
+		<script src="p5.dom.min.js" type="text/javascript"></script>
+
+		<style type="text/css">
+
+		/* CSS RESET */
+		* {
+		padding: 0;
+		border: 0;
+		margin: 0;
+		}
+		a:link {color:black; text-decoration: none;}
+		a:visited {color: black; text-decoration: none;}
+		a:hover {color: black; text-decoration: none;}
+		li {list-style: none;}
+        label {color: rgba(100,100,100);}
+		body {font-family: 'Source Code Pro', monospace, 'Gothic A1', sans-serif; line-height: 1.8em; word-break: keep-all;}
+			
+			.wrap_all {
+				width: 50%;
+				margin: auto;
+				box-sizing: border-box;
+			}
+
+			.wrap_content {
+				margin-top: 10%;
+				padding: 5%;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+			.btn {
+				float: right;
+				padding: 1%;
+				border: 1px solid black;
+				box-shadow: 5px 5px 5px 5px orange;
+				cursor: pointer;
+			}
+
+			.content_::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			.orange {
+				background-color: orange;
+				display: inline-block;
+
+			}
+
+
+			.green {
+			}
+
+			.black {
+				background-color: black;
+				color: white;
+				display: inline-block;
+
+			}
+
+			.content_ {
+				box-sizing: border-box;
+				vertical-align: middle;
+			}
+		</style>
+
+
+	</head>
+
+	<body>
+			<div class="wrap_content">
+				<div class="content_">
+					<span class="orange">The Dog</span>
+					<span class="green">and</span>
+					<span id="_2" class="black"></span>
+
+					<div id = "test" class="btn">
+						<button>GO!</button>
+					</div>
+				</div>
+
+				<script src="script.js" type="text/javascript"></script>
+
+				
+
+			</div> 
+
+	</body>
+
+</html>
