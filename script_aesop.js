@@ -1,3 +1,4 @@
+var first_animal = document.getElementById("_1");
 var second_animal = document.getElementById("_2");
 
 //console.log(first_animal, second_animal);
@@ -6,13 +7,13 @@ var animals;
 function setup(){
 
 	noCanvas();
-	loadStrings('eng.txt', stringLoaded);
+	loadStrings('list.txt', stringLoaded);
 
 }
 
 function stringLoaded(results){
 
-	animals = split(results[0],"  ");
+	animals = split(results[0]," ");
 	//console.log(animals);
 	//console.log(results[0]);
 
@@ -34,9 +35,11 @@ function mousePressed(){
 
 document.getElementById("test").addEventListener("click",function(){
 
-	var random_number_2 = floor(random(0,9));
-	console.log(animals[random_number_2]);
+	var random_number_1 = floor(random(0,46));
+	var random_number_2 = floor(random(0,46));
+	console.log(animals[random_number_1],animals[random_number_2]);
 
+	first_animal.innerHTML = animals[random_number_1];
 	second_animal.innerHTML = animals[random_number_2];
 	
 },false);
