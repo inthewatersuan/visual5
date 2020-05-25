@@ -1,0 +1,326 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+a {text-decoration: none;}
+li {list-style: none;}
+body{font-family: 'Montserrat', sans-serif;}
+.wrap_all {
+    width: 1200px;
+    margin: auto;
+}
+
+/*======== 헤더영역 ========*/
+
+.header_wrap {
+    box-sizing: border-box;
+    margin-top: 3%;
+}
+
+.nav_top {
+    background-color: white;
+    box-sizing: border-box;
+
+    width: 100%;
+}
+
+.nav_top::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-btn_home {
+    outline: none;
+    box-sizing: border-box;
+    height: inherit;
+    width: 100%;
+    float: left;
+}
+
+.nav-btn_ver1 {
+    outline: none;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    height: 58px;
+    width: 33.333%;
+    
+    text-align: center;
+}
+
+.nav-btn_ver2 {
+    outline: none;
+    box-sizing: border-box;
+    display: block;
+    height: 58px;
+    width: 33.333%;
+    
+    text-align: center;
+}
+
+
+.nav_bottom {
+    border-bottom: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.nav_bottom::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*---- info 드롭다운 메뉴 ----*/
+.info-dropdown {
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.dropdown-content_wrap {
+    box-sizing: border-box;
+    background-color: black;
+    width: 33.333%;
+    
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+.info-dropdown:hover .dropdown-content_wrap {display: block;}
+
+
+
+
+.dropdown-content {
+    outline: none;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 16px;
+    box-shadow: 0px 0px 0px 1px #000;
+    
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    height: 58px; 
+    
+    cursor: pointer;
+}
+
+.dropdown-content:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/*---- work 드롭다운 메뉴----*/
+.work-dropdown {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.work-dropdown:hover .dropdown-content_wrap {display: block;}
+
+.dropdown-work_wrap {
+    box-sizing: border-box;
+    background-color: black;
+    width: 33.333%;
+    margin: auto;
+    
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+
+
+
+
+.nav-btn_fables {
+    box-sizing: border-box;
+    float: left;
+    height: 50%;
+    width: 50%;
+    
+    text-align: center;
+    font-size: 21px;
+    outline: none;
+    
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.nav-btn_characters {
+    outline: none;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    height: 50%;
+    width: 50%;
+    
+    text-align: center;
+    font-size: 21px;
+    
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.nav-btn_info:hover {
+    background-color: #000;
+    color: #fff;}
+
+
+.nav-btn_work:hover {
+    background-color: #000;
+    color: #fff;}
+
+
+
+
+/*======== 배너영역 ========*/
+.banner {
+    height: 500px;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.banner_content {
+
+    box-sizing: border-box;
+    text-align: center;
+
+    margin: 5%;
+}
+
+
+.banner_content_1 {
+    box-sizing: border-box;
+
+    display: inline-block;
+
+}
+
+.banner_content_2{
+    box-sizing: border-box;
+
+    display: block;
+
+
+
+}
+
+.random_1 {
+    border: 1px solid black;
+    box-sizing: border-box;
+
+    width: 50px;
+    height: 30px;
+
+    vertical-align: middle;
+}
+
+/*
+.banner {
+    position: relative;
+}
+
+
+.banner-main {
+    width: 33.333%;
+    margin: auto;
+    height: 570px;
+    position: absolute;
+    
+    right: 33.333%;
+    top: 60px;
+    
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+*/
+
+
+
+
+
+
+
+/*======== 푸터영역 ========*/
+
+.footer_wrap {
+    width: 1200px;
+    box-sizing: border-box;
+
+    left: 0;
+    bottom: 0;
+}
+
+.footer_wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer-fables,
+.footer-character {
+    position: relative;
+
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    height: 80px;
+    text-align: center;
+
+    box-sizing: border-box;
+    top: 0;
+    width: 50%;
+    border-right: 5px solid transparent;
+}
+
+
+.footer-btn_fables,
+.footer-btn_character {
+    border-radius: 50px;
+
+    outline: none;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+
+
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+
+}
+
+
+.footer-title {
+    display: inline-block;
+
+    vertical-align: middle;
+    transition: all .2s;
+}
+
+.footer-title:hover {border-bottom: 2px solid;}
+
+.footer-content {
+    display: inline-block;
+    padding-top: 5px;
+}
+
+
+
