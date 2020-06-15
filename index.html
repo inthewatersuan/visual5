@@ -8,7 +8,7 @@
     <script src="p5.dom.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Gothic+A1:wght@400;500;700&display=swap" rel="stylesheet">
 
 
     <style type="text/css">
@@ -23,11 +23,11 @@
         a:hover {color: black; text-decoration: none;}
         li {list-style: none;}
         label {color: rgba(100,100,100);}
-        body {font-family: 'Montserrat', sans-serif; line-height: 1.8em; word-break: keep-all;}
+        body {font-family: 'Cormorant Garamond', 'Gothic A1', serif, sans-serif; line-height: 1.8em; word-break: keep-all;}
 
         .wrap_content {
-/*            border: 10px solid blue;
-*/            font-family: 'Montserrat', sans-serif;
+/*            border: 10px solid orange;
+*/            
             padding: 5%;
             box-sizing: border-box;
             text-align: center;
@@ -42,7 +42,10 @@
 
 
         .btn_wrap {
-            border: 1px solid;
+            background-color: #000;
+            color: #fff;
+            
+            border: 1px solid #000;
 
             display: block;
             margin-top: 10%;
@@ -52,13 +55,14 @@
 
             cursor: pointer;
 
-            width: 20%;
-
-            box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.5);
+            width: 45%;
 
             border-radius: 50px;
+            transition: all .2s;
+        }
 
-            
+        .btn_wrap:hover {
+            box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.3);
         }
 
         /*.content_::after {
@@ -83,6 +87,7 @@
 
         .random {
             border: 1px solid;
+            width: 30%;
         }
 
         .fix {
@@ -120,6 +125,8 @@
             display: block;
             clear: both;
         }
+
+       
     </style>
 </head>
 
@@ -130,12 +137,9 @@
 <!------ 헤더영역 ------> 
         <header class="header_wrap">
             <div class="nav_top">
-                <span class="nav-btn_ver1"></span>
                 <button class="nav-btn_home">
-                    <a href="#">
-                        <span style="font-family: 'Montserrat', sans-serif; font-size: 30px;">AESOP`S FABLES</span>
+                        <div class="title" style="background-image: url(./title.png);"></div>
                         <!-- <i class="material-icons">cached</i> -->
-                    </a>
                 </button>
                 <sapn class="nav-btn_ver2"></sapn>
             </div>
@@ -176,60 +180,48 @@
 
                <div class="banner_content">
 
-                    <span class="banner_content_1">Make your own Fables!</span>
+                    <span class="banner_content_1">당신의 이솝 우화는?</span>
                     
 
                     <div class="wrap_content">
                         <div class="random_wrap">
-                            <div class="fix">The</div>
-                            <div id="_1" class="random"></div>
-                            <div class="fix">and the</div>
+<!--                             <div class="fix">The</div>
+ -->                            <div id="_1" class="random"></div>
+                            <div class="fix">와(과)</div>
                             <div id="_2" class="random"></div>
                         </div>
 
                          <div id = "test" class="btn_wrap">
-                            GO!
+                            만들기
                         </div>
-                        <script src="script_aesop.js" type="text/javascript"></script>
-                    </div>  
+                        <script src="random_script.js" type="text/javascript"></script>
+                    </div> 
+
+<!------ 푸터영역 ------>   
+                    <footer class="footer_wrap">
+                        <div class="footer-fables">
+                            <a href="#">
+                                <button class="footer-btn_fables">
+                                    <a href="./list_korean.html">
+                                        <div class="footer-title" style="background-image: url(./fab_list.png);"></div>
+                                    </a>
+                                </button>
+                            </a>
+                        </div>
+                        
+                        <div class="footer-character">
+                                <a href="#">
+                                    <button class="footer-btn_character">
+                                        <div class="footer-title" style="background-image: url(./cha_list.png); width: 65%; height: 65%;">
+                                        <a href="./character_list.html"></a>
+                                        </div>
+                                    </button>
+                                </a>
+                        </div>
+                    </footer> 
                </div>
 
         </div>
-        
-        
-        
-        
-        
-<!------ 푸터영역 ------>    
-        <footer class="footer_wrap">
-
-            <div class="footer-fables">
-                <a href="#">
-                    <button class="footer-btn_fables">
-                        <div class="footer-title">
-                            <a href="./list.html">View Fables</a>
-                        </div>
-                    </button>
-                </a>
-            </div>
-            
-            <div class="footer-character">
-                    <a href="#">
-                        <button class="footer-btn_character">
-                            <div class="footer-title">View Characters</div>
-                        </button>
-                    </a>
-            </div>
-            
-        
-        </footer>
-    
-    
-    
-    
-    
-    
-    
     </div>
     
     
