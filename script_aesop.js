@@ -7,7 +7,7 @@ var animals;
 function setup(){
 
 	noCanvas();
-	loadStrings('random_list.txt', stringLoaded);
+	loadStrings('list.txt', stringLoaded);
 
 }
 
