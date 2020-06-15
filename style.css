@@ -312,7 +312,8 @@ li {list-style: none;}
 
 
 .footer-title {
-    display: inline-block;
+/*    border: 1px solid red;
+*/    display: inline-block;
     vertical-align: middle;
     /*font-family: 'Cormorant Garamond', serif;
     font-style: oblique;*/
@@ -322,8 +323,8 @@ li {list-style: none;}
     background-size: contain;
     position: relative;
 
-    width: 40%;
-    height: 40%;
+    width: 39%;
+    height: 39%;
 }
 
 .footer-title_2 {
@@ -337,8 +338,8 @@ li {list-style: none;}
     background-size: contain;
     position: relative;
 
-    width: 50%;
-    height: 50%;
+    width: 42%;
+    height: 42%;
 }
 
 /*.footer-title:hover {border-bottom: 1px solid;}
