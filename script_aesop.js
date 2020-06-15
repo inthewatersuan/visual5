@@ -7,13 +7,13 @@ var animals;
 function setup(){
 
 	noCanvas();
-	loadStrings('list.txt', stringLoaded);
+	loadStrings('random_list.txt', stringLoaded);
 
 }
 
 function stringLoaded(results){
 
-	animals = split(results[0]," ");
+	animals = split(results[0],",");
 	//console.log(animals);
 	//console.log(results[0]);
 
@@ -35,8 +35,8 @@ function mousePressed(){
 
 document.getElementById("test").addEventListener("click",function(){
 
-	var random_number_1 = floor(random(0,46));
-	var random_number_2 = floor(random(0,46));
+	var random_number_1 = floor(random(0,155));
+	var random_number_2 = floor(random(0,155));
 	console.log(animals[random_number_1],animals[random_number_2]);
 
 	first_animal.innerHTML = animals[random_number_1];
